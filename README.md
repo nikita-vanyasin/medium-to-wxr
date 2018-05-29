@@ -1,5 +1,5 @@
 
-## Convert Medium exported articles to Wordpress XML (WXR)
+## Convert Medium articles to Wordpress XML (WXR)
 
 The script takes the folder with exported articles and converts them to WordPress WXR format: 
 https://codex.wordpress.org/Importing_Content#WordPress
@@ -39,10 +39,10 @@ https://codex.wordpress.org/Importing_Content#WordPress
 1) The file named "export-john.smith-6000.xml" should appear in the folder.
 1) In your Wordpress installation install and activate [Wordpress Importer plugin](https://codex.wordpress.org/Importing_Content#WordPress)
 1) Replace wordpress-importer.php in plugin folder. My version works correctly with images in article which do not have extension.
-1) Job done! 
+1) Job done!
 You can use  to import the file to your Wordpress installation.
 I personally recommend to use the wp-cli "import" [command](https://developer.wordpress.org/cli/commands/import/) as this is much more reliable than importing through the webpage.
-1) After importing to WordPress all article are in "Draft" state so you could tune it before publishing.
+1) After importing to WordPress all articles are in "Draft" state so you could tune it before publishing.
 See after_import.sql for handy queries to prettify article content and set publish date from medium.
 
 
