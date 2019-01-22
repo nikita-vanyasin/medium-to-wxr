@@ -8,7 +8,7 @@ https://codex.wordpress.org/Importing_Content#WordPress
 - Docker
 
 #### Features:
-- All images in article will be uploaded to "Media Library" in Wordpress and would be cross-linked with articles. 
+- All images in article will be uploaded to "Media Library" in Wordpress and will have cross-linked with articles. 
 - Use the first image in post as a "Featured image" in WordPress.
 - Works good with iframe embeds like videos.
 - Replace the background images in article to Image tag in WordPress.
@@ -19,7 +19,7 @@ https://codex.wordpress.org/Importing_Content#WordPress
 
 
 #### Steps:
-1) Export articles from Medium
+1) Export articles from Medium and unzip it.
 1) Clone the repo and run: 
     ```
     # unpack the zip file to the "exported" folder:
@@ -39,10 +39,9 @@ https://codex.wordpress.org/Importing_Content#WordPress
 1) The file named "export-john.smith-6000.xml" should appear in the folder.
 1) In your Wordpress installation install and activate [Wordpress Importer plugin](https://codex.wordpress.org/Importing_Content#WordPress)
 1) Replace wordpress-importer.php in plugin folder. My version works correctly with images in article which do not have extension.
-1) Job done!
-You can use  to import the file to your Wordpress installation.
-I personally recommend to use the wp-cli "import" [command](https://developer.wordpress.org/cli/commands/import/) as this is much more reliable than importing through the webpage.
-1) After importing to WordPress all articles are in "Draft" state so you could tune it before publishing.
+1) Now you can import the file to your Wordpress installation.
+I personally recommend to use the wp-cli "import" [command](https://developer.wordpress.org/cli/commands/import/) as this is much more reliable than executing the process through the adminstration console.
+1) After import, all articles will be moved to "Draft" state so you could tune it before publishing.
 See after_import.sql for handy queries to prettify article content and set publish date from medium.
 
 
